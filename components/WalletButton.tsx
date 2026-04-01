@@ -16,7 +16,9 @@ export function WalletButton() {
   }
 
   const injectedConnector = connectors.find((item) => item.id === "injected");
-  const coinbaseConnector = connectors.find((item) => item.id === "coinbaseWalletSDK");
+  const coinbaseConnector = connectors.find((item) =>
+    item.id.toLowerCase().includes("coinbase"),
+  );
 
   return (
     <div className="wallet-group">
