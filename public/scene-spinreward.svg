@@ -1,0 +1,29 @@
+<svg width="720" height="400" viewBox="0 0 720 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="720" y2="400" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#24175A"/>
+      <stop offset="1" stop-color="#0E173C"/>
+    </linearGradient>
+    <linearGradient id="machine" x1="220" y1="70" x2="500" y2="330" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#5A4DE5"/>
+      <stop offset="1" stop-color="#2A2B9A"/>
+    </linearGradient>
+  </defs>
+  <rect width="720" height="400" rx="24" fill="url(#bg)"/>
+  <circle cx="88" cy="74" r="9" fill="#48F5FF"/>
+  <circle cx="640" cy="96" r="13" fill="#FF4DB8"/>
+  <circle cx="672" cy="58" r="8" fill="#FFD84F"/>
+  <rect x="220" y="70" width="280" height="270" rx="36" fill="url(#machine)" stroke="#A4A8FF" stroke-width="4"/>
+  <rect x="256" y="102" width="206" height="134" rx="22" fill="#11173E" stroke="#8B92FF" stroke-width="3"/>
+  <circle cx="360" cy="170" r="52" fill="#1D225A" stroke="#55F3FF" stroke-width="4"/>
+  <circle cx="360" cy="170" r="41" fill="#2A2F7C"/>
+  <path d="M360 123L373 159L411 159L380 181L391 216L360 196L329 216L340 181L309 159L347 159L360 123Z" fill="#FFD84F"/>
+  <rect x="278" y="260" width="164" height="58" rx="16" fill="#1A1F54" stroke="#89EEFF" stroke-width="3"/>
+  <text x="360" y="298" text-anchor="middle" font-size="34" fill="#FFD84F" font-family="Trebuchet MS, sans-serif" font-weight="700">SPIN</text>
+  <circle cx="168" cy="300" r="36" fill="#FFB84A"/>
+  <circle cx="136" cy="262" r="24" fill="#7E72FF"/>
+  <circle cx="554" cy="286" r="28" fill="#4EFFAA"/>
+  <circle cx="586" cy="248" r="18" fill="#FF4DB8"/>
+  <path d="M116 118L130 146L160 150L138 171L144 201L116 186L88 201L94 171L72 150L102 146L116 118Z" fill="#FF74C4"/>
+  <path d="M594 142L605 164L630 168L612 185L616 209L594 198L572 209L576 185L558 168L583 164L594 142Z" fill="#48F5FF"/>
+</svg>
