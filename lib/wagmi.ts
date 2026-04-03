@@ -20,7 +20,34 @@ export const wagmiConfig = createConfig({
   chains: [base],
   connectors: [
     injected({
-      target: "okxWallet",
+      target: {
+        id: "okxWallet",
+        name: "OKX Wallet",
+        provider(window) {
+          const w = window as Window & {
+            okxwallet?: { ethereum?: unknown } & Record<string, unknown>;
+            ethereum?: {
+              isOkxWallet?: boolean;
+              isOKExWallet?: boolean;
+              providers?: Array<{ isOkxWallet?: boolean; isOKExWallet?: boolean }>;
+            };
+          };
+
+          if (w.okxwallet?.ethereum) return w.okxwallet.ethereum;
+          if (w.okxwallet) return w.okxwallet;
+
+          const ethereum = w.ethereum;
+          if (!ethereum) return undefined;
+          if (ethereum.isOkxWallet || ethereum.isOKExWallet) return ethereum;
+          if (Array.isArray(ethereum.providers)) {
+            return ethereum.providers.find(
+              (p: { isOkxWallet?: boolean; isOKExWallet?: boolean }) =>
+                p?.isOkxWallet || p?.isOKExWallet,
+            );
+          }
+          return undefined;
+        },
+      },
     }),
     coinbaseWallet({
       appName: "SpinReward",

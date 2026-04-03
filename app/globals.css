@@ -109,6 +109,18 @@ a {
   background: rgba(103, 74, 25, 0.72);
 }
 
+.wallet-hint {
+  margin: 8px 4px 0;
+  font-size: 0.8rem;
+  color: var(--text-dim);
+}
+
+.wallet-error {
+  margin: 6px 4px 0;
+  font-size: 0.84rem;
+  color: var(--danger);
+}
+
 .wallet-btn.connected {
   width: 100%;
   background: rgba(30, 94, 69, 0.68);
