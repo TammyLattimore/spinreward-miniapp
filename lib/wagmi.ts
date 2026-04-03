@@ -19,11 +19,15 @@ export const DATA_SUFFIX =
 export const wagmiConfig = createConfig({
   chains: [base],
   connectors: [
+    injected({
+      target: "okxWallet",
+    }),
     coinbaseWallet({
       appName: "SpinReward",
     }),
     injected(),
   ],
+  multiInjectedProviderDiscovery: true,
   transports: {
     [base.id]: http(),
   },

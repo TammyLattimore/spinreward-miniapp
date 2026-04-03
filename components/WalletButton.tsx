@@ -15,20 +15,28 @@ export function WalletButton() {
     );
   }
 
-  const injectedConnector = connectors.find((item) => item.id === "injected");
+  const okxConnector = connectors.find(
+    (item) =>
+      item.id.toLowerCase().includes("okx") || item.name.toLowerCase().includes("okx"),
+  );
   const coinbaseConnector = connectors.find((item) =>
     item.id.toLowerCase().includes("coinbase"),
   );
+  const injectedConnector = connectors.find(
+    (item) =>
+      item.id === "injected" &&
+      !(item.id.toLowerCase().includes("okx") || item.name.toLowerCase().includes("okx")),
+  );
 
   return (
-    <div className="wallet-group">
+    <div className="wallet-group wallet-group-3">
       <button
         type="button"
-        className="wallet-btn"
-        disabled={!injectedConnector || isPending}
-        onClick={() => injectedConnector && connect({ connector: injectedConnector })}
+        className="wallet-btn okx"
+        disabled={!okxConnector || isPending}
+        onClick={() => okxConnector && connect({ connector: okxConnector })}
       >
-        {isPending ? "Connecting..." : "Connect Injected"}
+        {isPending ? "Connecting..." : "Connect OKX"}
       </button>
       <button
         type="button"
@@ -37,6 +45,14 @@ export function WalletButton() {
         onClick={() => coinbaseConnector && connect({ connector: coinbaseConnector })}
       >
         Coinbase Wallet
+      </button>
+      <button
+        type="button"
+        className="wallet-btn"
+        disabled={!injectedConnector || isPending}
+        onClick={() => injectedConnector && connect({ connector: injectedConnector })}
+      >
+        {isPending ? "Connecting..." : "Connect Injected"}
       </button>
     </div>
   );

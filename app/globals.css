@@ -85,6 +85,10 @@ a {
   gap: 10px;
 }
 
+.wallet-group-3 {
+  grid-template-columns: 1fr;
+}
+
 .wallet-btn {
   min-height: 46px;
   border-radius: 14px;
@@ -98,6 +102,11 @@ a {
 .wallet-btn.alt {
   border-color: rgba(255, 127, 193, 0.65);
   background: rgba(80, 30, 89, 0.75);
+}
+
+.wallet-btn.okx {
+  border-color: rgba(255, 216, 79, 0.65);
+  background: rgba(103, 74, 25, 0.72);
 }
 
 .wallet-btn.connected {
