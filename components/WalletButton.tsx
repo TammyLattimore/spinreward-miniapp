@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useState } from "react";
 import { useAccount, useConnect, useDisconnect } from "wagmi";
 
 function formatConnectError(error: unknown) {
@@ -41,13 +41,9 @@ export function WalletButton() {
       !(item.id.toLowerCase().includes("okx") || item.name.toLowerCase().includes("okx")),
   );
 
-  const okxMissingHint = useMemo(
-    () =>
-      !okxConnector
-        ? "OKX not detected. Install OKX extension or open this page in OKX Wallet dApp browser."
-        : "",
-    [okxConnector],
-  );
+  const okxMissingHint = !okxConnector
+    ? "OKX not detected. Install OKX extension or open this page in OKX Wallet dApp browser."
+    : "";
 
   async function onConnect(target: typeof okxConnector) {
     if (!target) return;
