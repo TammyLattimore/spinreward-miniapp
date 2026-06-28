@@ -62,3 +62,11 @@ Use the package manager that matches the lock file committed to the repository.
 Check the available scripts in `package.json`.
 
 Common local development commands may include:
+
+```bash
+npm run dev
+```
+
+```bash
+npm start
+```
