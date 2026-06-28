@@ -125,3 +125,11 @@ or:
 ```bash
 npm run test
 ```
+
+Use the command defined by the project scripts.
+
+## Build
+
+If the project includes a build step, run it before preparing a release.
+
+Common command:
