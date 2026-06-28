@@ -141,3 +141,11 @@ npm run build
 Confirm the generated output location in the project configuration.
 
 ## Contributing
+
+Contributions should keep the project clear, maintainable, and easy to run.
+
+Before submitting changes:
+
+- Pull the latest version of the repository.
+- Install dependencies cleanly.
+- Run the app locally.
