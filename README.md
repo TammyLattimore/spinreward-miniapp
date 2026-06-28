@@ -109,3 +109,11 @@ Recommended items to include:
 - Production deployment notes.
 
 Do not commit private or machine-specific configuration files.
+
+## Testing
+
+If tests are available, run them before committing changes.
+
+Common commands may include:
+
+```bash
