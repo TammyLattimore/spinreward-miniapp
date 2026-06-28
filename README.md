@@ -85,3 +85,11 @@ Run the command that matches the scripts defined in this project.
 - Avoid committing local build output unless the project specifically requires it.
 - Prefer clear commit messages that describe the change being made.
 - Test changes locally before opening or merging pull requests.
+
+## Suggested Project Structure
+
+The exact structure may vary, but a mini app commonly includes:
+
+- Source files for the application interface.
+- Static assets such as images, icons, and styles.
+- Configuration files for development and builds.
