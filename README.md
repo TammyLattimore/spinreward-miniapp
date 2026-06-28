@@ -100,3 +100,12 @@ Update this section when the final project structure is confirmed.
 ## Configuration
 
 If the project requires runtime configuration, document it here.
+
+Recommended items to include:
+
+- Required environment variable names.
+- Example values when safe to share.
+- Local development setup instructions.
+- Production deployment notes.
+
+Do not commit private or machine-specific configuration files.
