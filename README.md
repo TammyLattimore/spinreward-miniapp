@@ -38,3 +38,11 @@ After cloning the repository, inspect the project files to confirm the available
 If the project includes a `package.json` file, install dependencies with the package manager used by the project.
 
 For npm:
+
+```bash
+npm install
+```
+
+For pnpm:
+
+```bash
