@@ -93,3 +93,10 @@ The exact structure may vary, but a mini app commonly includes:
 - Source files for the application interface.
 - Static assets such as images, icons, and styles.
 - Configuration files for development and builds.
+- Documentation for setup, usage, and maintenance.
+
+Update this section when the final project structure is confirmed.
+
+## Configuration
+
+If the project requires runtime configuration, document it here.
