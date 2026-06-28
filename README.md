@@ -14,3 +14,11 @@ This README provides a clean starting point for setting up, running, and maintai
 
 - Provides a foundation for a spin reward mini app.
 - Keeps project files organized in a single repository.
+- Can be extended with reward logic, visual styling, and deployment configuration.
+- Suitable for local development and future iteration.
+
+## Repository
+
+Clone the project from GitHub:
+
+```bash
