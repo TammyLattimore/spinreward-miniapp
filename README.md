@@ -117,3 +117,11 @@ If tests are available, run them before committing changes.
 Common commands may include:
 
 ```bash
+npm test
+```
+
+or:
+
+```bash
+npm run test
+```
