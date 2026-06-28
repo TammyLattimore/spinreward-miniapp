@@ -149,3 +149,11 @@ Before submitting changes:
 - Pull the latest version of the repository.
 - Install dependencies cleanly.
 - Run the app locally.
+- Run available checks or tests.
+- Update documentation when behavior or setup changes.
+
+## License
+
+No license information is currently provided in the original README.
+
+Add a license file if distribution or reuse terms need to be defined.
