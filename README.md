@@ -22,3 +22,11 @@ This README provides a clean starting point for setting up, running, and maintai
 Clone the project from GitHub:
 
 ```bash
+git clone https://github.com/TammyLattimore/spinreward-miniapp.git
+```
+
+Move into the project directory:
+
+```bash
+cd spinreward-miniapp
+```
