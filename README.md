@@ -30,3 +30,11 @@ Move into the project directory:
 ```bash
 cd spinreward-miniapp
 ```
+
+## Setup
+
+After cloning the repository, inspect the project files to confirm the available tooling.
+
+If the project includes a `package.json` file, install dependencies with the package manager used by the project.
+
+For npm:
