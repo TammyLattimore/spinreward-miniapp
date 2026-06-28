@@ -46,3 +46,11 @@ npm install
 For pnpm:
 
 ```bash
+pnpm install
+```
+
+For Yarn:
+
+```bash
+yarn install
+```
