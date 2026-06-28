@@ -78,3 +78,10 @@ npm run build
 Run the command that matches the scripts defined in this project.
 
 ## Development Notes
+
+- Keep the README updated as setup and usage details become clearer.
+- Document any required environment variables in a dedicated section.
+- Keep reusable assets and configuration files organized.
+- Avoid committing local build output unless the project specifically requires it.
+- Prefer clear commit messages that describe the change being made.
+- Test changes locally before opening or merging pull requests.
