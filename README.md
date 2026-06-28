@@ -133,3 +133,11 @@ Use the command defined by the project scripts.
 If the project includes a build step, run it before preparing a release.
 
 Common command:
+
+```bash
+npm run build
+```
+
+Confirm the generated output location in the project configuration.
+
+## Contributing
