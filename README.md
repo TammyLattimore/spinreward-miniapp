@@ -70,3 +70,11 @@ npm run dev
 ```bash
 npm start
 ```
+
+```bash
+npm run build
+```
+
+Run the command that matches the scripts defined in this project.
+
+## Development Notes
